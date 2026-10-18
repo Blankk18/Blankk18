@@ -43,19 +43,15 @@ Featured projects
       <p><strong>Stack:</strong> Java</p>
     </td>
   </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🌱 <a href="https://github.com/Blankk18/microproject">Farmers' Produce Marketplace</a></h3>
-      <p>A web-based marketplace concept for browsing agricultural products and connecting farmers with customers.</p>
-      <p><strong>Stack:</strong> HTML · CSS</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🚀 More projects</h3>
-      <p>Explore the rest of my repositories for coursework, experiments, and ongoing builds.</p>
-      <p><a href="https://github.com/Blankk18?tab=repositories">Browse all repositories →</a></p>
-    </td>
-  </tr>
 </table>
+
+<div align="center">
+  <h3>🚀 Explore more</h3>
+  <p>Browse my other repositories for experiments, coursework, and projects in progress.</p>
+  <a href="https://github.com/Blankk18?tab=repositories">
+    <img src="https://img.shields.io/badge/Explore_All_Repositories-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore all GitHub repositories" />
+  </a>
+</div>
 
 GitHub stats
 <div align="center">
