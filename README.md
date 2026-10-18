@@ -77,3 +77,7 @@ I'm an Electronics & Computer Science Engineering student who enjoys turning ide
 <div align="center">
   <i>Building consistently. Learning continuously.</i>
 </div>
+
+## 🐍 Contribution Snake
+
+![GitHub Contribution Snake](https://raw.githubusercontent.com/Blankk18/Blankk18/output/github-contribution-grid-snake.svg)
