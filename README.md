@@ -34,16 +34,10 @@ I'm an Electronics & Computer Science Engineering student at Shah & Anchor Kutch
 
 <img src="assets/section-projects.svg" alt="Projects" width="100%"/>
 
-<table>
-  <tr>
-    <td width="50%"><a href="https://github.com/Blankk18/neurosaathi"><img src="assets/card-neurosaathi.svg" alt="NeuroSaathi" width="100%"/></a></td>
-    <td width="50%"><a href="https://github.com/Blankk18/JavaMicroProject"><img src="assets/card-supermarket-pos.svg" alt="Smart Supermarket POS" width="100%"/></a></td>
-  </tr>
-  <tr>
-    <td width="50%"><a href="https://github.com/Blankk18/microproject"><img src="assets/card-farmers-marketplace.svg" alt="Farmers' Marketplace" width="100%"/></a></td>
-    <td width="50%"><a href="https://github.com/Blankk18/PowerBI-Hospital-Dashboard"><img src="assets/card-hospital-dashboard.svg" alt="Hospital Dashboard" width="100%"/></a></td>
-  </tr>
-</table>
+<a href="https://github.com/Blankk18/neurosaathi"><img src="assets/card-neurosaathi.svg" alt="NeuroSaathi" width="49%"/></a>
+<a href="https://github.com/Blankk18/JavaMicroProject"><img src="assets/card-supermarket-pos.svg" alt="Smart Supermarket POS" width="49%"/></a>
+
+<a href="https://github.com/Blankk18?tab=repositories"><img src="assets/explore.svg" alt="Explore all repositories" width="100%"/></a>
 
 <br/>
 

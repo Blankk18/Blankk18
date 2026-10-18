@@ -37,12 +37,6 @@ PROJECTS = [
     dict(slug="supermarket-pos", title="Smart Supermarket POS", kind="Java desktop app", accent="gold", live=False,
          desc="Point-of-sale and self-checkout system covering product management, billing and customer transactions.",
          tags=["Java", "OOP", "MySQL"]),
-    dict(slug="farmers-marketplace", title="Farmers' Marketplace", kind="Web app", accent="mint", live=False,
-         desc="A marketplace that connects producers directly with customers to discover and buy fresh agricultural products.",
-         tags=["HTML", "CSS", "JavaScript"]),
-    dict(slug="hospital-dashboard", title="Hospital Dashboard", kind="Data visualization", accent="copper", live=False,
-         desc="Power BI dashboard that turns hospital data into charts and KPIs you can filter and explore.",
-         tags=["Power BI", "Data viz"]),
 ]
 FOOTER_LINE = "Build something useful. Learn something new. Repeat."
 # ───────────────────────────────────────────────────────────────────
@@ -311,6 +305,28 @@ def card(p):
     write(f"card-{p['slug']}.svg", s + "</svg>")
 
 
+# ───────────────────────────── "explore all repositories" banner ─────────────────────────────
+def explore():
+    W, H = 1000, 112
+    css = (".pulse{fill:none;stroke:%s;stroke-width:2.6;stroke-linecap:round;stroke-dasharray:8 92;animation:flow 4.5s linear infinite}"
+           "@keyframes flow{0%%{stroke-dashoffset:8}70%%{stroke-dashoffset:-92}100%%{stroke-dashoffset:-92}}" % GOLD)
+    d = "M560,72 H690 L716,56 H896"
+    s = svg_open(W, H, "Explore all repositories", "Banner linking to the full list of repositories.", css)
+    s += (
+        f'<defs><linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{COPPER}"/><stop offset=".5" stop-color="{LINE}"/><stop offset="1" stop-color="{CYAN}"/></linearGradient></defs>'
+        f'<rect x=".75" y=".75" width="{W - 1.5}" height="{H - 1.5}" rx="16" fill="{BOARD2}" stroke="url(#bd)" stroke-width="1.5"/>'
+        f'<rect x="32" y="30" width="9" height="9" rx="2" fill="{COPPER}"/>'
+        f'<text x="32" y="72" font-size="28" font-weight="700" fill="{TEXT}">Explore all repositories</text>'
+        f'<text class="m" x="32" y="94" font-size="13" fill="{MUTED}">Web apps, Java projects, dashboards and everything else I have built</text>'
+        f'<path d="{d}" fill="none" stroke="{COPPER}" stroke-opacity=".4" stroke-width="1.6"/>'
+        f'<path class="pulse" pathLength="100" d="{d}"/>'
+        f'<circle cx="560" cy="72" r="4" fill="{BOARD2}" stroke="{COPPER}" stroke-width="1.6"/>'
+        f'<circle cx="920" cy="56" r="24" fill="{BOARD}" stroke="{GOLD}" stroke-width="2"/>'
+        f'<path d="M911,56 H929 M922,48 L930,56 L922,64" fill="none" stroke="{GOLD}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+    )
+    write("explore.svg", s)
+
+
 # ───────────────────────────── section headings ─────────────────────────────
 def section(slug, title, accent, delay):
     W, H = 1000, 44
@@ -368,5 +384,6 @@ if __name__ == "__main__":
     for i, (slug, title, acc) in enumerate([("about", "About", GOLD), ("toolbox", "Toolbox", CYAN), ("projects", "Projects", COPPER),
                                               ("activity", "GitHub activity", MINT), ("contributions", "Contribution trail", GOLD)]):
         section(slug, title, acc, i * 0.9)
+    explore()
     footer()
     print("Done.")
