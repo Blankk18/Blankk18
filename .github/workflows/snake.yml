@@ -1,4 +1,4 @@
-name: Generate contribution snake
+name: Contribution snake
 
 on:
   schedule:
@@ -15,15 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Generate gold contribution snake
-        uses: Platane/snk/svg-only@v3
+      - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=FFD166&color_dots=%23F9E7A1,%23F1CD62,%23E3B341,%23C88A18,%237A4D00
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=FFD166&color_dots=%231C1606,%234F390A,%2389630F,%23C4901E,%23F8D76B
-      - name: Publish generated SVGs
-        uses: crazy-max/ghaction-github-pages@v4
+            dist/github-contribution-grid-snake.svg?color_snake=%23FFD166&color_dots=%23130F06,%233D2D0A,%237A5B16,%23C89B2C,%23FFD166
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%23FFD166&color_dots=%23130F06,%233D2D0A,%237A5B16,%23C89B2C,%23FFD166
+      - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
